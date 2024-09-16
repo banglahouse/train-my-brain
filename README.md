@@ -7,6 +7,7 @@
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Running the Application](#running-the-application)
+- [Limitation] (#limitation)
 - [Dependencies](#dependencies)
 - [Development Tools](#development-tools)
 - [Author](#author)
@@ -53,6 +54,11 @@ cors: Middleware to enable Cross-Origin Resource Sharing.
 body-parser: Parses incoming request bodies in a middleware before your handlers.
 joi: A powerful schema description and validation library.
 uuid: A package to generate unique IDs for quizzes and questions.
+
+## Limitation
+No database or cache memory like redis is used for storing data in memory so as soon as server is closed or restarted,
+all the data will be lost.
+
 
 ### Development Tools
 ts-node-dev: A development tool that runs TypeScript files with real-time reload.
