@@ -1,0 +1,430 @@
+{
+	"info": {
+		"_postman_id": "dcc3527b-8bb3-4a77-8425-eb953f74641a",
+		"name": "train-my-brain",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16837842"
+	},
+	"item": [
+		{
+			"name": "create-quiz",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Quiz 1\",\n    \"questions\": [\n        {\n            \"text\": \"What is the capital of France?\",\n            \"options\": [\n                \"Berlin\",\n                \"Madrid\",\n                \"Paris\",\n                \"Rome\"\n            ],\n            \"correctOption\": 2\n        },\n        {\n            \"text\": \"Which planet is known as the Red Planet?\",\n            \"options\": [\n                \"Earth\",\n                \"Mars\",\n                \"Jupiter\",\n                \"Saturn\"\n            ],\n            \"correctOption\": 1\n        }\n    ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/v1/quiz",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"quiz"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create-quiz",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Quiz 1\",\n    \"questions\": [\n        {\n            \"text\": \"What is the capital of France?\",\n            \"options\": [\n                \"Berlin\",\n                \"Madrid\",\n                \"Paris\",\n                \"Rome\"\n            ],\n            \"correctOption\": 2\n        },\n        {\n            \"text\": \"Which planet is known as the Red Planet?\",\n            \"options\": [\n                \"Earth\",\n                \"Mars\",\n                \"Jupiter\",\n                \"Saturn\"\n            ],\n            \"correctOption\": 1\n        }\n    ]\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/v1/quiz",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"quiz"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, DELETE, PUT, OPTION"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "1800"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "409"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"199-fBHn6zU930uWhx++vjZD0d0TW4M\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Sep 2024 14:21:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": \"0ab1843a-3c8c-4784-94be-2460c1e04e67\",\n        \"title\": \"Quiz 1\",\n        \"questions\": [\n            {\n                \"id\": \"3e8bdbbd-01f4-48b7-bedb-89c9b600a791\",\n                \"text\": \"What is the capital of France?\",\n                \"options\": [\n                    \"Berlin\",\n                    \"Madrid\",\n                    \"Paris\",\n                    \"Rome\"\n                ],\n                \"correctOption\": 2\n            },\n            {\n                \"id\": \"937915b5-c3e0-4b14-b89b-ed36557b6cd6\",\n                \"text\": \"Which planet is known as the Red Planet?\",\n                \"options\": [\n                    \"Earth\",\n                    \"Mars\",\n                    \"Jupiter\",\n                    \"Saturn\"\n                ],\n                \"correctOption\": 1\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "get-quiz",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/v1/quiz/0ab1843a-3c8c-4784-94be-2460c1e04e67",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"quiz",
+						"0ab1843a-3c8c-4784-94be-2460c1e04e67"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/v1/quiz/0ab1843a-3c8c-4784-94be-2460c1e04e67",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"quiz",
+								"0ab1843a-3c8c-4784-94be-2460c1e04e67"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, DELETE, PUT, OPTION"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "1800"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "373"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"175-quDsNb9mv/N0MD/fbjhPgsv3CCk\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Sep 2024 14:22:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": \"0ab1843a-3c8c-4784-94be-2460c1e04e67\",\n        \"title\": \"Quiz 1\",\n        \"questions\": [\n            {\n                \"id\": \"3e8bdbbd-01f4-48b7-bedb-89c9b600a791\",\n                \"text\": \"What is the capital of France?\",\n                \"options\": [\n                    \"Berlin\",\n                    \"Madrid\",\n                    \"Paris\",\n                    \"Rome\"\n                ]\n            },\n            {\n                \"id\": \"937915b5-c3e0-4b14-b89b-ed36557b6cd6\",\n                \"text\": \"Which planet is known as the Red Planet?\",\n                \"options\": [\n                    \"Earth\",\n                    \"Mars\",\n                    \"Jupiter\",\n                    \"Saturn\"\n                ]\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "submit-answer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"quizId\" : \"0ab1843a-3c8c-4784-94be-2460c1e04e67\",\n    \"questionId\": \"3e8bdbbd-01f4-48b7-bedb-89c9b600a791\",\n    \"selectedOption\" : 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/v1/quiz/answer/1",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"quiz",
+						"answer",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "submit-answer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"quizId\" : \"0ab1843a-3c8c-4784-94be-2460c1e04e67\",\n    \"questionId\": \"3e8bdbbd-01f4-48b7-bedb-89c9b600a791\",\n    \"selectedOption\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/v1/quiz/answer/1",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"quiz",
+								"answer",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, DELETE, PUT, OPTION"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "1800"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "61"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3d-m/8WTq1ATdzR+x68KPn0UIw4CNs\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Sep 2024 14:25:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"isCorrect\": false,\n        \"correctOption\": 2\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "get-result",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/v1/quiz/0ab1843a-3c8c-4784-94be-2460c1e04e67/results/1",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"quiz",
+						"0ab1843a-3c8c-4784-94be-2460c1e04e67",
+						"results",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/v1/quiz/0ab1843a-3c8c-4784-94be-2460c1e04e67/results/1",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"quiz",
+								"0ab1843a-3c8c-4784-94be-2460c1e04e67",
+								"results",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, DELETE, PUT, OPTION"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "1800"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "199"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c7-3BGLP3XW7zZpDwYDRmipcZqUP+U\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Sep 2024 14:26:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"quizId\": \"0ab1843a-3c8c-4784-94be-2460c1e04e67\",\n        \"userId\": \"1\",\n        \"score\": 0,\n        \"answers\": [\n            {\n                \"questionId\": \"3e8bdbbd-01f4-48b7-bedb-89c9b600a791\",\n                \"selectedOption\": 1,\n                \"isCorrect\": false\n            }\n        ]\n    }\n}"
+				}
+			]
+		}
+	]
+}

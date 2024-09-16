@@ -1,0 +1,34 @@
+
+{
+	"compilerOptions": {
+		//target, depending on the type of platform and its version.
+		"target": "es2016",
+		//Sets the module system for the program.
+		"module": "commonjs",
+		//Use for changes the behavior in the compiler and to ensure compatibility in the emitted by JavaScript
+		"esModuleInterop": true,
+		//Prevent issues related to the file casing and how the files are referenced in the code for diff OSes
+		"forceConsistentCasingInFileNames": true,
+		//Type checking behavior that results in stronger guarantees of program correctness.
+		"strict": true,
+		//Helps for Decrease compilation time.
+		"skipLibCheck": true,
+		//Directory for output files after build in dist folder.
+		"outDir": "dist",
+		//The decorator metadata is needed to reflect over the metadata at runtime.
+		"emitDecoratorMetadata": true,
+		//Decorators are a proposed feature in ECMAScript that allows you to modify the behavior of
+		// classes, methods, properties, or parameters during declaration.
+		"experimentalDecorators": true,
+		//TypeScript allows us to disable strict property initialization checks for class properties.
+		"strictPropertyInitialization": false,
+		"rootDir": "." /* Specify the root folder within your source files. */,
+		"moduleResolution": "node",
+		"baseUrl": "." /* Specify the base directory to resolve non-relative module names. */,
+		"paths": {},
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true
+	}
+}
+
+
