@@ -20,22 +20,29 @@ Ensure you have the following installed on your system:
 ## Installation
 
 ### Clone the repository:
+```console
 git clone <repository-url>
 cd train-my-brain
+```
 
 ### Install dependencies:
+```console
 npm install
+```
 Running the Application
 
 ### Development Mode:
 To run the app in development mode with TypeScript support, use:
+```console
 npm run start:dev
+```
 This command uses ts-node-dev to run the TypeScript code with real-time reloading.
 
 ### Production Mode:
 To compile the TypeScript code and run the compiled JavaScript, use:
-
+```console
 npm start
+```
 This will compile the TypeScript files and execute the dist/index.js file.
 
 
